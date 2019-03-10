@@ -1,6 +1,4 @@
 import numpy as np
-import scipy.linalg as alg
-import matplotlib.pyplot as plt
 
 def func(A, f, N):
     x = [0] * N
@@ -10,8 +8,6 @@ def func(A, f, N):
             x[i] = x[i] - A[i][j] * x[j]
         x[i] = x[i] / A[i][i]
     return np.array(x)
-
-
  
 N = int(input())
 A = np.random.rand(N, N)
@@ -40,6 +36,6 @@ for i in range(N):
 y = func(L, f, N)
 L.transpose()
 x = func(L, y, N)
-print(A)
-print(f)
+#print(A)
+#print(f)
 print(x)
