@@ -1,6 +1,4 @@
 import numpy as np
-import scipy.linalg as alg
-import matplotlib.pyplot as plt
 
 def func(a, b, c, f, N):
     alpha = np.array([0.0] * (N + 1))
@@ -29,9 +27,8 @@ for i in range(N):
     if i < N - 1:
         A[i][i + 1] = c[i]
 x = func(a, b, c, f, N)
-#x = np.linalg.solve(A, f)
-print(a)
-print(b)
-print(c)
-print(f)
+#print(a)
+#print(b)
+#print(c)
+#print(f)
 print(x)
