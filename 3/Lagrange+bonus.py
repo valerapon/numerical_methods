@@ -1,6 +1,4 @@
 import numpy as np
-import scipy.linalg as alg
-import matplotlib.pyplot as plt
 
 #O(m * n ^ 2)
 def Lagrange(x, y, valueX):
@@ -48,30 +46,20 @@ N = int(inputX.readline())
 inputY.readline()
 M = int(inputFindX.readline())
 
-x = [float(i) for i in inputX.readline().split()]
-y = [float(i) for i in inputY.readline().split()]
-newX = [float(i) for i in inputFindX.readline().split()]
+x = np.array([float(i) for i in inputX.readline().split()])
+y = np.array([float(i) for i in inputY.readline().split()])
+newX = np.array([float(i) for i in inputFindX.readline().split()])
 
-print('Input X:')
-print(*x)
-print('Input Y:')
-print(*y)
-print('Find X:')
-print(*newX)
-print('Output:')
+
 outputY.write(str(N) + '\n')
 '''
 for i in range(M):
     valueY = Lagrange(x, y, newX[i])
     outputY.write(str(valueY) + ' ')
-    print(valueY, end=' ')
-print()
 '''
 for i in range(M):
     valueY = fastLagrange(x, y, newX[i])
     outputY.write(str(valueY) + ' ')
-    print(valueY, end=' ')
-    
 inputX.close()
 inputY.close()
 inputFindX.close()

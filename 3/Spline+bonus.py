@@ -1,6 +1,4 @@
 import numpy as np
-import scipy.linalg as alg
-import matplotlib.pyplot as plt
 
 def runing(a, b, c, f, N):
     alpha = np.array([0.0] * (N + 1))
@@ -101,23 +99,11 @@ newX = np.array([float(i) for i in inputFindX.readline().split()])
 #A, B, C, D = generateSplineSmoothGrid(x, y)
 A, B, C, D = generateSplineRandomGrid(x, y)
 
-print('Input X:')
-print(*x)
-print('Input Y:')
-print(*y)
-print('Find X:')
-print(*newX)
-print('Output:')
 outputY.write(str(N) + '\n')
 for i in range(M):
     valueY = evaluateValueY(x, A, B, C, D, newX[i]);
     outputY.write(str(valueY) + ' ')
-    print(valueY, end=' ')
-print()
 inputX.close()
 inputY.close()
 inputFindX.close()
 outputY.close()
-
-    
-
