@@ -113,8 +113,7 @@ for i in range(M):
     valueY = evaluateValueY(x, A, B, C, D, newX[i]);
     outputY.write(str(valueY) + ' ')
     print(valueY, end=' ')
-
-    
+print()
 inputX.close()
 inputY.close()
 inputFindX.close()
