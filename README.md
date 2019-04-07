@@ -23,3 +23,10 @@ Task № 2 - Seidel:
   
 ### Folder № 3:  
 As well as in first and second folders here are the sources. But in addition were attached bonus problem. For Lagrange's method - make it on random grid more faster then was (i can reach asymptotics O(n^2 + mn)) all proofs you can find on photo, which called like a it's source. For Splines method - do all on random grid. Derivation of formulas enclose in photo. There isn't just third superbonus, but it will apper soon.   
+
+Task № 1 - Linear:  
+![](3/Linear.png)  
+Task № 2 - Lagrange:  
+![](3/Lagrange.png)   
+Task № 3 - Spline:  
+![](3/Spline.png)
