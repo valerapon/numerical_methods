@@ -31,6 +31,12 @@ Task № 2 - Lagrange:
 Task № 3 - Spline:  
 ![](3/Spline.png)
 
-Bonus tasks:  
+#### Bonus tasks:
+  
+Lagrange with O(n^2 + m\*n) asymptotics:  
+  
 ![](3/Lagrange+bonus.jpg)  
+
+Splie on random grid:  
+
 ![](3/Spline+bonus.jpg)  
