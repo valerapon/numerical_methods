@@ -14,6 +14,10 @@ Task № 3 - Cholesky:
 ### Folder № 2:  
 Is simillar situation like with first folder: Jacobi and Seidel.  
 Also with source were attached images with graphics of same dependence.  
+Task № 1 - Jacobi:  
+![](2/Jacobi_1_400.png)  
+Task № 2 - Seidel:  
+![](2/Seidel_1_350.png) 
   
 ### Folder № 3:  
 As well as in first and second folders here are the sources. But in addition were attached bonus problem. For Lagrange's method - make it on random grid more faster then was (i can reach asymptotics O(n^2 + mn)) all proofs you can find on photo, which called like a it's source. For Splines method - do all on random grid. Derivation of formulas enclose in photo. There isn't just third superbonus, but it will apper soon.   
