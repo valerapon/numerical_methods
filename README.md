@@ -30,3 +30,7 @@ Task № 2 - Lagrange:
 ![](3/Lagrange.png)   
 Task № 3 - Spline:  
 ![](3/Spline.png)
+
+Bonus tasks:  
+![](3/Lagrange+bonus.jpg)  
+![](3/Spline+bonus.jpg)  
