@@ -33,10 +33,10 @@ Task № 3 - Spline:
 
 #### Bonus tasks:
   
-Lagrange with O(n^2 + m\*n) asymptotics:  
+1) Lagrange with O(n^2 + m\*n) asymptotics:  
   
-![](3/Lagrange+bonus.jpg)  
+&nbsp;![](3/Lagrange+bonus.jpg)  
 
-Splie on random grid:  
+2) Splie on random grid:  
 
-![](3/Spline+bonus.jpg)  
+&nbsp;![](3/Spline+bonus.jpg)  
