@@ -2,7 +2,7 @@
   
 ### Folder №1:  
 First folder containe 3 methods: Gauss, Cholesky and sweep method (is called \"running\")  
-When program start, you need to enter a number of matrix size, for example 100 its compute fast, but 500 it will be long.  
+When program start, you need to enter a number of matrix size, for example 100 it's compute fast, but 500 it will be long.  
 With source files in folder locate image with graphics of dependence between matrix size and time execution (integrated function work too fast)  
   
 ### Folder №2:  
