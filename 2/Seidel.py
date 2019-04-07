@@ -1,6 +1,4 @@
 import numpy as np
-import scipy.linalg as alg
-import matplotlib.pyplot as plt
 
 def diff(x1, x2, N):
     Sum = 0
