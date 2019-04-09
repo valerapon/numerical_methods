@@ -26,10 +26,10 @@ As well as in first and second folders here are the sources. But in addition wer
 
 ##### Task № 1 - Linear (3/Linear/py):    
 ![](3/Linear.png)  
-##### Task № 2 - Lagrange (3/Lagrange.py):   
-![](3/Lagrange+bonus.png)   
-##### Task № 3 - Spline (3/Spline.py):   
-![](3/Spline+bonus.png)
+##### Task № 2 - Lagrange (3/Lagrange+bonus.py):   
+![](3/Lagrange.png)   
+##### Task № 3 - Spline (3/Spline+bonus.py):   
+![](3/Spline.png)
 
 #### Bonus tasks:
   
