@@ -3,7 +3,7 @@ import numpy as np
 def runing(a, b, c, f, N):
     alpha = np.array([0.0] * (N + 1))
     beta = np.array([0.0] * (N + 1))
-    for i in range(N - 1):
+    for i in range(N):
         alpha[i + 1] = -c[i] / (a[i] * alpha[i] + b[i])
         beta[i + 1] = (f[i] - a[i] * beta[i]) / (a[i] * alpha[i] + b[i])
     x = np.array([0.0] * N)
