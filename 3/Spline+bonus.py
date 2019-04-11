@@ -44,7 +44,7 @@ def generateSplineSmoothGrid(x, y):
     for i in range(N):
         D[i] = y[i]
         B[i] = s[i]
-        A[i] = (B[i] - B[i]) / (3 * h)
+        A[i] = (B[i + 1] - B[i]) / (3 * h)
         if i != N - 1:
             C[i] = (y[i + 1] - y[i]) / h - (B[i + 1] + 2 * B[i]) * h / 3
         else:
@@ -73,7 +73,7 @@ def generateSplineRandomGrid(x, y):
     for i in range(N):
         D[i] = y[i]
         B[i] = s[i]
-        A[i] = (B[i] - B[i]) / (3 * h[i])
+        A[i] = (B[i + 1] - B[i]) / (3 * h[i])
         if i != N - 1:
             C[i] = (y[i + 1] - y[i]) / h[i] - (B[i + 1] + 2 * B[i]) * h[i] / 3
         else:
