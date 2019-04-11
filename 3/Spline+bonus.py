@@ -3,7 +3,7 @@ import numpy as np
 def runing(a, b, c, f, N):
     alpha = np.array([0.0] * (N + 1))
     beta = np.array([0.0] * (N + 1))
-    for i in range(N - 1):
+    for i in range(N):
         alpha[i + 1] = -c[i] / (a[i] * alpha[i] + b[i])
         beta[i + 1] = (f[i] - a[i] * beta[i]) / (a[i] * alpha[i] + b[i])
     x = np.array([0.0] * N)
@@ -37,14 +37,14 @@ def generateSplineSmoothGrid(x, y):
     for i in range(1, N):
         f[i] = 3 * (y[i - 1] - 2 * y[i] + y[i + 1]) / h ** 2
     s = runing(a, b, c, f, N + 1)
-    A = np.array([0] * (N + 1))
-    B = np.array([0] * (N + 1))
-    C = np.array([0] * (N + 1))
-    D = np.array([0] * (N + 1))
+    A = np.array([0.0] * (N + 1))
+    B = np.array([0.0] * (N + 1))
+    C = np.array([0.0] * (N + 1))
+    D = np.array([0.0] * (N + 1))
     for i in range(N):
         D[i] = y[i]
         B[i] = s[i]
-        A[i] = (B[i] - B[i]) / (3 * h)
+        A[i] = (B[i + 1] - B[i]) / (3 * h)
         if i != N - 1:
             C[i] = (y[i + 1] - y[i]) / h - (B[i + 1] + 2 * B[i]) * h / 3
         else:
@@ -66,14 +66,14 @@ def generateSplineRandomGrid(x, y):
         c[i] = h[i - 1]
         f[i] = 3 * ((y[i + 1] - y[i]) / h[i] - (y[i] - y[i - 1]) / h[i - 1])
     s = runing(a, b, c, f, N + 1)
-    A = np.array([0] * (N + 1))
-    B = np.array([0] * (N + 1))
-    C = np.array([0] * (N + 1))
-    D = np.array([0] * (N + 1))
+    A = np.array([0.0] * (N + 1))
+    B = np.array([0.0] * (N + 1))
+    C = np.array([0.0] * (N + 1))
+    D = np.array([0.0] * (N + 1))
     for i in range(N):
         D[i] = y[i]
         B[i] = s[i]
-        A[i] = (B[i] - B[i]) / (3 * h[i])
+        A[i] = (B[i + 1] - B[i]) / (3 * h[i])
         if i != N - 1:
             C[i] = (y[i + 1] - y[i]) / h[i] - (B[i + 1] + 2 * B[i]) * h[i] / 3
         else:
