@@ -37,10 +37,10 @@ def generateSplineSmoothGrid(x, y):
     for i in range(1, N):
         f[i] = 3 * (y[i - 1] - 2 * y[i] + y[i + 1]) / h ** 2
     s = runing(a, b, c, f, N + 1)
-    A = np.array([0] * (N + 1))
-    B = np.array([0] * (N + 1))
-    C = np.array([0] * (N + 1))
-    D = np.array([0] * (N + 1))
+    A = np.array([0.0] * (N + 1))
+    B = np.array([0.0] * (N + 1))
+    C = np.array([0.0] * (N + 1))
+    D = np.array([0.0] * (N + 1))
     for i in range(N):
         D[i] = y[i]
         B[i] = s[i]
@@ -66,10 +66,10 @@ def generateSplineRandomGrid(x, y):
         c[i] = h[i - 1]
         f[i] = 3 * ((y[i + 1] - y[i]) / h[i] - (y[i] - y[i - 1]) / h[i - 1])
     s = runing(a, b, c, f, N + 1)
-    A = np.array([0] * (N + 1))
-    B = np.array([0] * (N + 1))
-    C = np.array([0] * (N + 1))
-    D = np.array([0] * (N + 1))
+    A = np.array([0.0] * (N + 1))
+    B = np.array([0.0] * (N + 1))
+    C = np.array([0.0] * (N + 1))
+    D = np.array([0.0] * (N + 1))
     for i in range(N):
         D[i] = y[i]
         B[i] = s[i]
