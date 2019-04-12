@@ -37,6 +37,35 @@ As well as in first and second folders here are the sources. But in addition wer
   
 &nbsp;![](3/Lagrange+bonus.jpg)  
 
-<strong>2) Splie on random grid:</strong>  
+<strong>2) Spline on random grid:</strong>  
 
 &nbsp;![](3/Spline+bonus.jpg)  
+
+<strong>3) Spline on 2 demensional grid:</strong>  
+All GUI was created using pygame.  
+How to install: <code>pip install pygame</code>  
+Structure of code:  
+function for solve problem with 3 diagonal matrix  
+<code>def func(a, b, c, f, N)</code>  
+a - lower diagonal  
+b - central diagonal  
+c - upper diagonal  
+f - answer vector  
+function for generate splines:  
+<code>def generateSpline(x, y)</code>  
+x - coordinates of point on Ox axis  
+y - coordinatws of point on Oy axis  
+function for draw spline:  
+<code>def draw(xFactors, yFactors, tStart, tEnd)</code>  
+Where xFactors and yFactors are arrays of factor of polynomial At^3+Bt^2+Ct+D (for x(t) and y(t)), tStart and tEnd are coordinates of axis "T" start and end of segment of value.   
+set color:  
+white for background, red for curve, green for points  
+<code>WHITE = (255, 255, 255)  
+RED = (225, 0, 50)  
+GREEN = (0, 225, 0)  
+</code>
+<code>pygame.init()</code> - start pygame modul  
+<code>window = pygame.display.set_mode((600, 600))</code> - create window 600x600 sizes  
+<code>window.fill(WHITE)</code> - set white background  
+<code>pygame.display.update()</code> - show window  
+Main cycle will perform while won't push exit button. For control all events use <code>pygame.event.get()</code>. This function generate list of all users action. If type of event will be quit <code>event.type == pygame.QUIT</code> program just finish execution. If user pressed the mouse button, program will know about them using <code>event.type == pygame.MOUSEBUTTONDOWN</code> and <code>event.button == 1</code> that it was left mouse button. After that program set white background <code>window.fill(WHITE)</code>, draw all points <code>pygame.draw.circle(window, GREEN, (x[j], y[j]), 5)</code>, generate splines for x and y <code>generateSpline(t, x)</code> and <code>generateSpline(t, y)</code>, draw curse using <code>draw(...)</code> function, mapped on display all changes <code>pygame.display.update()</code>, make pause 0.02 sec <code>pygame.time.delay(20)</code> and continue working.  
