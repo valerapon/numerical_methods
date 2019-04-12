@@ -40,34 +40,32 @@ def draw(xFactors, yFactors, tStart, tEnd):
     for i in range(tStart, tEnd + 1):
         x = xFactors[0] * ((i - tStart) ** 3) + xFactors[1] * ((i - tStart) ** 2) + xFactors[2] * (i - tStart) + xFactors[3]
         y = yFactors[0] * ((i - tStart) ** 3) + yFactors[1] * ((i - tStart) ** 2) + yFactors[2] * (i - tStart) + yFactors[3]
-        pygame.draw.line(sc, RED, (x, y), (x, y), 2)
+        pygame.draw.line(window, RED, (x, y), (x, y), 2)
 
-x = []
-y = []
-t = []
 
 WHITE = (255, 255, 255)
 RED = (225, 0, 50)
 GREEN = (0, 225, 0)
-BLUE = (0, 0, 225)
  
 pygame.init()
-sc = pygame.display.set_mode((600, 600))
-sc.fill(WHITE)
+window = pygame.display.set_mode((600, 600))
+window.fill(WHITE)
 pygame.display.update()
 
+x, y, t = [], [], []
+
 while True:
-    for i in pygame.event.get():
-        if i.type == pygame.QUIT:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
             exit()
-        if i.type == pygame.MOUSEBUTTONDOWN:
-            x += [i.pos[0]]
-            y += [i.pos[1]]
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            x += [event.pos[0]]
+            y += [event.pos[1]]
             t += [len(t) * 1000]
-            if i.button == 1:
-                sc.fill(WHITE)
+            if event.button == 1:
+                window.fill(WHITE)
                 for j in range(len(x)):
-                    pygame.draw.circle(sc, GREEN, (x[j], y[j]), 5)
+                    pygame.draw.circle(window, GREEN, (x[j], y[j]), 5)
                 if len(x) > 1: 
                     xA, xB, xC, xD = generateSpline(t, x)
                     yA, yB, yC, yD = generateSpline(t, y)
