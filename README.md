@@ -43,7 +43,7 @@ As well as in first and second folders here are the sources. But in addition wer
 
 <strong>3) Spline on 2 demensional grid:</strong>  
 All GUI was created using pygame.  
-![](3/2DSpline.png)
+![](3/2DSpline.png)  
 ##### How to install:   
 <code>pip install pygame</code>  
 ##### Structure of code:  
@@ -88,6 +88,7 @@ generate splines for x and y
 <code>generateSpline(t, x)</code>  
 and  
 <code>generateSpline(t, y)</code>  
+![](3/2DTSpline.png)  
 draw curse using  
 <code>draw(...)</code>  
 function, mapped on display all changes  
