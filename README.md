@@ -43,6 +43,7 @@ As well as in first and second folders here are the sources. But in addition wer
 
 <strong>3) Spline on 2 demensional grid:</strong>  
 All GUI was created using pygame.  
+![](3/2DSpline.png)
 ##### How to install:   
 <code>pip install pygame</code>  
 ##### Structure of code:  
