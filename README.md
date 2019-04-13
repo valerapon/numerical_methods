@@ -101,4 +101,12 @@ and continue working.
 Contain source code for diffusion problem.   
 ![](4/Example.png)  
 Main purpose - after pressing create temperature spot and it's distribution.
-![](4/Scheme.png)
+![](4/Scheme.png)  
+<code>newMatrix[i][j] = matrix[i][j] + mu * tau / (h ** 2) * (matrix[i - 1][j] + matrix[i + 1][j] + matrix[i][j - 1] + matrix[i][j + 1] - 4 * matrix[i][j])</code>   
+   
+<code>f()</code> - main function for calculating cell temperature  
+<code>draw()</code> - display surface  
+<code>pressed = pygame.mouse.get_pressed()</code> - control of pressing on button  
+<code>pos = pygame.mouse.get_pos()</code> - get cursor position during pressing    
+<code>if pressed[0]:</code>  
+&nbsp;<code>matrix[pos[0]][pos[1]] = 255.0</code> - set max temperature in pressed pixel  
