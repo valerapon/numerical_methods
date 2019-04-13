@@ -96,3 +96,9 @@ function, mapped on display all changes
 make pause 0.02 sec  
 <code>pygame.time.delay(20)</code>  
 and continue working.  
+
+### Folder № 4:
+Contain source code for diffusion problem.   
+![](4/Example.png)  
+Main purpose - after pressing create temperature spot and it's distribution.
+![](4/Scheme.png)
