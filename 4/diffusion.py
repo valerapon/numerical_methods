@@ -52,5 +52,4 @@ while True:
     if pressed[0]:
         matrix[pos[0]][pos[1]] = 255.0
     draw()
-    print(matrix)
     pygame.display.update()
