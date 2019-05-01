@@ -5,7 +5,7 @@ First folder containes 3 methods: Gauss, Cholesky and sweep method (called \"run
 When program start, you need to enter a number of matrix size, for example 100 it's compute fast, but 500 it will be long.  
 With source files in folder locate image with graphics of dependence between matrix size and time execution (integrated function work too fast).  
   
-$'\sqrt{2}'$
+
 
 
 ##### Task № 1 - Gauss (1/Gauss.py):    
