@@ -114,7 +114,7 @@ newMatrix[i][j] = matrix[i][j] + C * (matrix[i - 1][j] + matrix[i + 1][j] +matri
 <code>pressed = pygame.mouse.get_pressed()</code> - control of pressing on button  
 <code>pos = pygame.mouse.get_pos()</code> - get cursor position during pressing    
 <code>if pressed[0]:</code>  
-<code>    matrix[pos[0]][pos[1]] = 400.0</code> - set temperature in pressed pixel  
+```    matrix[pos[0]][pos[1]] = 400.0``` - set temperature in pressed pixel  
 #### Wave:
 ![](pictures/wave.png)   
 ```
@@ -127,4 +127,4 @@ matrix[i][j] = 2.0 * matrixOld[i][j] - matrixSuperOld[i][j] + C * (matrixOld[i+1
 <code>pressed = pygame.mouse.get_pressed()</code> - control of pressing on button  
 <code>pos = pygame.mouse.get_pos()</code> - get cursor position during pressing    
 <code>if pressed[0]:</code>  
-<code>    matrix[pos[0]][pos[1]] = 300.0</code> - start wave from pressed pixel 
+```    matrix[pos[0]][pos[1]] = 300.0``` - start wave from pressed pixel 
