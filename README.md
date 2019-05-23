@@ -37,7 +37,7 @@ As well as in first and second folders here are the sources. But in addition wer
 #### Bonus tasks:
   
 <strong>1) Lagrange with O(n^2 + m\*n) asymptotics:</strong>  
-  
+<img src="https://latex.codecogs.com/gif.latex?O_t=\text { Onset event at time bin } t " />
 &nbsp;![](pictures/Lagrange+bonus.jpg)  
 
 <strong>2) Spline on random grid:</strong>  
