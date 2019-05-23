@@ -1,7 +1,7 @@
 # numerical_methods  
   
 ### systemSolution:  
-First folder containes 3 methods: Gauss, Cholesky and sweep method (called \"running\")  
+First folder containes 3 methods: Gauss, Cholesky and Sweep method (called \"running\")  
 When program start, you need to enter a number of matrix size, for example 100 it's compute fast, but 500 it will be long.  
 With source files in folder locate image with graphics of dependence between matrix size and time execution (integrated function work too fast).  
   
@@ -101,7 +101,7 @@ make pause 0.02 sec
 and continue working.  
 
 ### mathematicalPhysics:
-Contain source code for diffusion problem.   
+#### Diffusion:  
 ![](pictures/Example.png)  
 Main purpose - after pressing create temperature spot and it's distribution.
 ![](pictures/Scheme.png)  
