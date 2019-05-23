@@ -2,7 +2,7 @@ import numpy as np
 import pygame
 from pygame import gfxdraw
 
-def f():
+def computing():
     newMatrix = np.zeros((N,N))
     for i in range(N):
         for j in range(N):
@@ -36,7 +36,7 @@ window.fill((255, 255, 255))
 pygame.display.update()
 
 while True:
-    matrix = f()
+    matrix = computing()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             exit()
