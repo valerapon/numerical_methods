@@ -37,7 +37,7 @@ As well as in first and second folders here are the sources. But in addition wer
 #### Bonus tasks:
   
 <strong>1) Lagrange with O(n^2 + m\*n) asymptotics:</strong>  
-![equation](https://www.codecogs.com/eqnedit.php?latex=P(x)=\sum_{i=0}^{n-1}y_i&space;\prod_{i=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(x)=\sum_{i=0}^{n-1}y_i&space;\prod_{i=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}" title="P(x)=\sum_{i=0}^{n-1}y_i \prod_{i=0,j\neq i}^{n-1}\frac{x-x_j}{x_i-x_j})
+![equation](https://latex.codecogs.com/gif.latex?P(x)=\sum_{i=0}^{n-1}y_i&space;\prod_{i=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j})
 &nbsp;![](pictures/Lagrange+bonus.jpg)  
 
 <strong>2) Spline on random grid:</strong>  
