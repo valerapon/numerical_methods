@@ -105,7 +105,8 @@ and continue working.
 ![](pictures/diffusion.png)  
 Main purpose - after pressing create temperature spot and it's distribution.
 ![](pictures/Scheme.png)  
-<code>newMatrix[i][j] = matrix[i][j] + mu * tau / (h ** 2) * (matrix[i - 1][j] + matrix[i + 1][j] + matrix[i][j - 1] + matrix[i][j + 1] - 4 * matrix[i][j])</code>   
+<code>newMatrix[i][j] = matrix[i][j] + mu * tau / (h ** 2) * (matrix[i - 1][j] + matrix[i + 1][j] +
+  matrix[i][j - 1] + matrix[i][j + 1] - 4 * matrix[i][j])</code>   
    
 <code>computing()</code> - main function for calculating cell temperature  
 <code>draw()</code> - display surface  
@@ -115,7 +116,8 @@ Main purpose - after pressing create temperature spot and it's distribution.
 &nbsp;<code>matrix[pos[0]][pos[1]] = 400.0</code> - set temperature in pressed pixel  
 #### Wave:
 ![](pictures/wave.png)   
-<code>matrix[i][j] = 2.0 * matrixOld[i][j] - matrixSuperOld[i][j] + C * (matrixOld[i+1][j] + matrixOld[i-1][j] + matrixOld[i][j-1] + matrixOld[i][j+1] - 4.0 * matrixOld[i][j])</code>  
+<code>matrix[i][j] = 2.0 * matrixOld[i][j] - matrixSuperOld[i][j] + C * (matrixOld[i+1][j] + matrixOld[i-1][j] +
+  matrixOld[i][j-1] + matrixOld[i][j+1] - 4.0 * matrixOld[i][j])</code>  
 <code>computing()</code> - main function for calculating wave distribution  
 <code>draw()</code> - display surface  
 <code>pressed = pygame.mouse.get_pressed()</code> - control of pressing on button  
