@@ -5,9 +5,6 @@ First folder containes 3 methods: Gauss, Cholesky and Sweep method (called \"run
 When program start, you need to enter a number of matrix size, for example 100 it's compute fast, but 500 it will be long.  
 With source files in folder locate image with graphics of dependence between matrix size and time execution (integrated function work too fast).  
   
-
-
-
 ##### Task № 1 - Gauss (1/Gauss.py):    
 ![](pictures/Gauss_1_300.png)  
 ##### Task № 2 - Sweep (1/Running.py):    
@@ -35,20 +32,8 @@ As well as in first and second folders here are the sources. But in addition wer
 ![](pictures/Spline.png)
 
 #### Bonus tasks:
-  
-<strong>1) Lagrange with O(n^2 + m\*n) asymptotics:</strong>  
-Lagrange polynomial:   
-![](https://latex.codecogs.com/gif.latex?P(x)=\sum_{i=0}^{n-1}y_i&space;\prod_{i=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j})  
-Standart asymptotics:  ![](https://latex.codecogs.com/gif.latex?O(mn^2))   
-Upgrade:  
-![](https://latex.codecogs.com/gif.latex?P(x)=\sum_{i=0}^{n-1}y_i&space;\prod_{j=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}&space;=\sum_{i=0}^{n-1}y_i&space;\prod_{j=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}&space;\frac{x-x_i}{x-x_i}&space;=&space;\sum_{i=0}^{n-1}y_i&space;\frac{\prod_{j=0}^{n-1}(x-x_j)}{\prod_{j=0,j\neq&space;i}^{n-1}(x_i-x_j)}&space;\frac{1}{x-x_i}&space;=&space;\newline&space;=&space;\prod_{j=0}^{n-1}(x-x_j)\sum_{i=0}^{n-1}&space;\frac{y_i}{x-x_i}\frac{1}{\prod_{j=0,j\neq&space;i}^{n-1}(x_i-x_j)}&space;=&space;\prod_{j=0}^{n-1}(x-x_j)\sum_{i=0}^{n-1}\frac{A_i}{x-x_i})    
-where:  
-![](https://latex.codecogs.com/gif.latex?A_i=\frac{y_i}{\prod_{j=0,&space;j\neq&space;i}^{n-1}(x_i-x_j)},&space;x\neq&space;x_i)  
-Let  
-![](https://latex.codecogs.com/gif.latex?\alpha(x)=\prod_{j=0}^{n-1}(x-x_j),&space;\beta(x)=\sum_{i=0}^{n-1}\frac{A_i}{x-x_i},&space;P(x)=\alpha(x)\beta(x))  
-![](https://latex.codecogs.com/gif.latex?\newline&space;A_i,&space;i=\overline{0,n-1}\Rightarrow&space;O(n^2)&space;\newline&space;\alpha(x)\Rightarrow&space;O(mn)&space;\newline&space;\beta(x)&space;\Rightarrow&space;O(mn))  
-Total:  
-![](https://latex.codecogs.com/gif.latex?O(n^2&plus;mn))  
+   
+![](https://latex.codecogs.com/gif.latex?\dpi{150}&space;\newline&space;\texttt{1\)Lagrange&space;polynomial:}\newline&space;P(x)=\sum_{i=0}^{n-1}y_i\prod_{i=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}\newline&space;\texttt{Standart&space;asymptotics:}\&space;O(n^2m)\newline&space;P(x)=\sum_{i=0}^{n-1}y_i\prod_{j=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}&space;=\sum_{i=0}^{n-1}y_i&space;\prod_{j=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}&space;\frac{x-x_i}{x-x_i}&space;=&space;\sum_{i=0}^{n-1}y_i\frac{\prod_{j=0}^{n-1}(x-x_j)}{\prod_{j=0,j\neq&space;i}^{n-1}(x_i-x_j)}&space;\frac{1}{x-x_i}=\newline&space;=&space;\prod_{j=0}^{n-1}(x-x_j)\sum_{i=0}^{n-1}\frac{y_i}{x-x_i}\frac{1}{\prod_{j=0,j\neq&space;i}^{n-1}(x_i-x_j)}&space;=&space;\prod_{j=0}^{n-1}(x-x_j)\sum_{i=0}^{n-1}\frac{A_i}{x-x_i}\newline&space;\texttt{Where:}\newline&space;A_i=\frac{y_i}{\prod_{j=0,j\neq&space;i}^{n-1}(x_i-x_j)},x\neq&space;x_i\newline&space;\texttt{Let}\newline&space;\alpha(x)=\prod_{j=0}^{n-1}(x-x_j),\&space;\beta(x)=\sum_{i=0}^{n-1}\frac{A_i}{x-x_i},\&space;P(x)=\alpha(x)\beta(x)\newline&space;A_i,i=\overline{0,n1}\Rightarrow&space;O(n^2)\newline\alpha(x)\Rightarrow&space;O(mn)\newline\beta(x)\Rightarrow&space;O(mn)\newline&space;\texttt{Total:}O(n^2&plus;mn)) 
 
 <strong>2) Spline on random grid:</strong>  
 
