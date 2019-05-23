@@ -1,6 +1,6 @@
 # numerical_methods  
   
-### Folder № 1:  
+### systemSolution:  
 First folder containes 3 methods: Gauss, Cholesky and sweep method (called \"running\")  
 When program start, you need to enter a number of matrix size, for example 100 it's compute fast, but 500 it will be long.  
 With source files in folder locate image with graphics of dependence between matrix size and time execution (integrated function work too fast).  
@@ -15,7 +15,7 @@ With source files in folder locate image with graphics of dependence between mat
 ##### Task № 3 - Cholesky (1/Cholesky.py):   
 ![](pictures/Cholesky_1_120.png)   
   
-### Folder № 2:  
+### iterativeMethods:  
 Is simillar situation like with first folder: Jacobi and Seidel.  
 Also with source were attached images with graphics of same dependence.  
   
@@ -24,7 +24,7 @@ Also with source were attached images with graphics of same dependence.
 ##### Task № 2 - Seidel (2/Seidel.py):  
 ![](pictures/Seidel_1_350.png) 
   
-### Folder № 3:  
+### approximation:  
 As well as in first and second folders here are the sources. But in addition were attached bonus problem. For Lagrange's method - make it on random grid more faster then was (i can reach asymptotics O(n^2 + mn)) all proofs you can find on photo, which called like a it's source. For Splines method - do all on random grid. Derivation of formulas enclose in photo. There isn't just third superbonus, but it will apper soon.   
 
 ##### Task № 1 - Linear (3/Linear/py):    
@@ -100,7 +100,7 @@ make pause 0.02 sec
 <code>pygame.time.delay(20)</code>  
 and continue working.  
 
-### Folder № 4:
+### mathematicalPhysics:
 Contain source code for diffusion problem.   
 ![](pictures/Example.png)  
 Main purpose - after pressing create temperature spot and it's distribution.
