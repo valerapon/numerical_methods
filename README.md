@@ -1,37 +1,37 @@
 # numerical_methods  
   
-### systemSolution:  
+## systemSolution:  
 First folder containes 3 methods: Gauss, Cholesky and Sweep method (called \"running\")  
 When program start, you need to enter a number of matrix size, for example 100 it's compute fast, but 500 it will be long.  
 With source files in folder locate image with graphics of dependence between matrix size and time execution (integrated function work too fast).  
   
-##### Task № 1 - Gauss (1/Gauss.py):    
+### Task № 1 - Gauss (1/Gauss.py):    
 ![](pictures/Gauss_1_300.png)  
-##### Task № 2 - Sweep (1/Running.py):    
+### Task № 2 - Sweep (1/Running.py):    
 ![](pictures/Running_1_7000.png)    
-##### Task № 3 - Cholesky (1/Cholesky.py):   
+### Task № 3 - Cholesky (1/Cholesky.py):   
 ![](pictures/Cholesky_1_120.png)   
   
-### iterativeMethods:  
+## iterativeMethods:  
 Is simillar situation like with first folder: Jacobi and Seidel.  
 Also with source were attached images with graphics of same dependence.  
   
-##### Task № 1 - Jacobi (2/Jacobi.py):     
+### Task № 1 - Jacobi (2/Jacobi.py):     
 ![](pictures/Jacobi_1_400.png)   
-##### Task № 2 - Seidel (2/Seidel.py):  
+### Task № 2 - Seidel (2/Seidel.py):  
 ![](pictures/Seidel_1_350.png) 
   
-### approximation:  
+## approximation:  
 As well as in first and second folders here are the sources. But in addition were attached bonus problem. For Lagrange's method - make it on random grid more faster then was (i can reach asymptotics O(n^2 + mn)) all proofs you can find on photo, which called like a it's source. For Splines method - do all on random grid. Derivation of formulas enclose in photo. There isn't just third superbonus, but it will apper soon.   
 
-##### Task № 1 - Linear (3/Linear/py):    
+### Task № 1 - Linear (3/Linear/py):    
 ![](pictures/Linear.png)  
-##### Task № 2 - Lagrange (3/Lagrange+bonus.py):   
+### Task № 2 - Lagrange (3/Lagrange+bonus.py):   
 ![](pictures/Lagrange.png)   
-##### Task № 3 - Spline (3/Spline+bonus.py):   
+### Task № 3 - Spline (3/Spline+bonus.py):   
 ![](pictures/Spline.png)
 
-#### Bonus tasks:
+### Bonus tasks:
    
 ![](https://latex.codecogs.com/gif.latex?\dpi{150}&space;\newline&space;\texttt{1\)Lagrange&space;polynomial:}\newline&space;P(x)=\sum_{i=0}^{n-1}y_i\prod_{i=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}\newline&space;\texttt{Standart&space;asymptotics:}\&space;O(n^2m)\newline&space;P(x)=\sum_{i=0}^{n-1}y_i\prod_{j=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}&space;=\sum_{i=0}^{n-1}y_i&space;\prod_{j=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}&space;\frac{x-x_i}{x-x_i}&space;=&space;\sum_{i=0}^{n-1}y_i\frac{\prod_{j=0}^{n-1}(x-x_j)}{\prod_{j=0,j\neq&space;i}^{n-1}(x_i-x_j)}&space;\frac{1}{x-x_i}=\newline&space;=&space;\prod_{j=0}^{n-1}(x-x_j)\sum_{i=0}^{n-1}\frac{y_i}{x-x_i}\frac{1}{\prod_{j=0,j\neq&space;i}^{n-1}(x_i-x_j)}&space;=&space;\prod_{j=0}^{n-1}(x-x_j)\sum_{i=0}^{n-1}\frac{A_i}{x-x_i}\newline&space;\texttt{Where}\newline&space;A_i=\frac{y_i}{\prod_{j=0,j\neq&space;i}^{n-1}(x_i-x_j)},x\neq&space;x_i\newline&space;\texttt{Let}\newline&space;\alpha(x)=\prod_{j=0}^{n-1}(x-x_j),\&space;\beta(x)=\sum_{i=0}^{n-1}\frac{A_i}{x-x_i},\&space;P(x)=\alpha(x)\beta(x)\newline&space;A_i,i=\overline{0,n1}\Rightarrow&space;O(n^2)\newline\alpha(x)\Rightarrow&space;O(mn)\newline\beta(x)\Rightarrow&space;O(mn)\newline&space;\texttt{Total:}O(n^2&plus;mn)) 
 
@@ -42,20 +42,20 @@ As well as in first and second folders here are the sources. But in addition wer
 <strong>3) Spline on 2 demensional grid:</strong>  
 All GUI was created using pygame.  
 ![](pictures/2DSpline.png)  
-##### How to install:   
+#### How to install:   
 <code>pip install pygame</code>  
-##### Structure of code:  
+#### Structure of code:  
 function for solve problem with 3 diagonal matrix  
 <code>def func(a, b, c, f, N)</code>  
 a - lower diagonal  
 b - central diagonal  
 c - upper diagonal  
 f - answer vector  
-##### function for generate splines:  
+#### function for generate splines:  
 <code>def generateSpline(x, y)</code>  
 x - coordinates of point on Ox axis  
 y - coordinatws of point on Oy axis  
-##### function for draw spline:  
+#### function for draw spline:  
 <code>def draw(xFactors, yFactors, tStart, tEnd)</code>  
 Where xFactors and yFactors are arrays of factor of polynomial At^3+Bt^2+Ct+D (for x(t) and y(t)), tStart and tEnd are coordinates of axis "T" start and end of segment of value.   
 set color:  
@@ -95,8 +95,8 @@ make pause 0.02 sec
 <code>pygame.time.delay(20)</code>  
 and continue working.  
 
-### mathematicalPhysics:
-#### Diffusion:  
+## mathematicalPhysics:
+### Diffusion:  
 ![](pictures/diffusion.png)  
 Main purpose - after pressing create temperature spot and it's distribution.
 ![](pictures/Scheme.png)  
@@ -110,7 +110,7 @@ newMatrix[i][j] = matrix[i][j] + C * (matrix[i - 1][j] + matrix[i + 1][j] +matri
 <code>pos = pygame.mouse.get_pos()</code> - get cursor position during pressing    
 <code>if pressed[0]:</code>  
 &nbsp;&nbsp;&nbsp;&nbsp;<code>matrix[pos[0]][pos[1]] = 400.0</code> - set temperature in pressed pixel  
-#### Wave:
+### Wave:
 ![](pictures/wave.png)   
 ```
 matrix[i][j] = 2.0 * matrixOld[i][j] - matrixSuperOld[i][j] + C * (matrixOld[i+1][j] + matrixOld[i-1][j] +
