@@ -102,7 +102,7 @@ and continue working.
 
 ### mathematicalPhysics:
 #### Diffusion:  
-![](pictures/Example.png)  
+![](pictures/diffusion.png)  
 Main purpose - after pressing create temperature spot and it's distribution.
 ![](pictures/Scheme.png)  
 <code>newMatrix[i][j] = matrix[i][j] + mu * tau / (h ** 2) * (matrix[i - 1][j] + matrix[i + 1][j] + matrix[i][j - 1] + matrix[i][j + 1] - 4 * matrix[i][j])</code>   
@@ -113,3 +113,5 @@ Main purpose - after pressing create temperature spot and it's distribution.
 <code>pos = pygame.mouse.get_pos()</code> - get cursor position during pressing    
 <code>if pressed[0]:</code>  
 &nbsp;<code>matrix[pos[0]][pos[1]] = 255.0</code> - set max temperature in pressed pixel  
+#### Wave:
+![](pictures/wave.png)  
