@@ -37,8 +37,18 @@ As well as in first and second folders here are the sources. But in addition wer
 #### Bonus tasks:
   
 <strong>1) Lagrange with O(n^2 + m\*n) asymptotics:</strong>  
-![equation](https://latex.codecogs.com/gif.latex?P(x)=\sum_{i=0}^{n-1}y_i&space;\prod_{i=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j})
-&nbsp;![](pictures/Lagrange+bonus.jpg)  
+Lagrange polynomial:   
+![](https://latex.codecogs.com/gif.latex?P(x)=\sum_{i=0}^{n-1}y_i&space;\prod_{i=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j})  
+Standart asymptotics:  ![](https://latex.codecogs.com/gif.latex?O(mn^2))   
+Upgrade:  
+![](https://latex.codecogs.com/gif.latex?P(x)=\sum_{i=0}^{n-1}y_i&space;\prod_{j=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}&space;=\sum_{i=0}^{n-1}y_i&space;\prod_{j=0,j\neq&space;i}^{n-1}\frac{x-x_j}{x_i-x_j}&space;\frac{x-x_i}{x-x_i}&space;=&space;\sum_{i=0}^{n-1}y_i&space;\frac{\prod_{j=0}^{n-1}(x-x_j)}{\prod_{j=0,j\neq&space;i}^{n-1}(x_i-x_j)}&space;\frac{1}{x-x_i}&space;=&space;\newline&space;=&space;\prod_{j=0}^{n-1}(x-x_j)\sum_{i=0}^{n-1}&space;\frac{y_i}{x-x_i}\frac{1}{\prod_{j=0,j\neq&space;i}^{n-1}(x_i-x_j)}&space;=&space;\prod_{j=0}^{n-1}(x-x_j)\sum_{i=0}^{n-1}\frac{A_i}{x-x_i})    
+where:  
+![](https://latex.codecogs.com/gif.latex?A_i=\frac{y_i}{\prod_{j=0,&space;j\neq&space;i}^{n-1}(x_i-x_j)},&space;x\neq&space;x_i)  
+Let  
+![](https://latex.codecogs.com/gif.latex?\alpha(x)=\prod_{j=0}^{n-1}(x-x_j),&space;\beta(x)=\sum_{i=0}^{n-1}\frac{A_i}{x-x_i},&space;P(x)=\alpha(x)\beta(x))  
+![](https://latex.codecogs.com/gif.latex?\newline&space;A_i,&space;i=\overline{0,n-1}\Rightarrow&space;O(n^2)&space;\newline&space;\alpha(x)\Rightarrow&space;O(mn)&space;\newline&space;\beta(x)&space;\Rightarrow&space;O(mn))  
+Total:  
+![](https://latex.codecogs.com/gif.latex?O(n^2&plus;mn))  
 
 <strong>2) Spline on random grid:</strong>  
 
