@@ -22,7 +22,7 @@ Also with source were attached images with graphics of same dependence.
 ![](pictures/Seidel_1_350.png) 
   
 ## approximation:  
-As well as in first and second folders here are the sources. But in addition were attached bonus problem. For Lagrange's method - make it on random grid more faster then was (i can reach asymptotics O(n^2 + mn)) all proofs you can find on photo, which called like a it's source. For Splines method - do all on random grid. Derivation of formulas enclose in photo. There isn't just third superbonus, but it will apper soon.   
+As well as in first and second folders here are the sources. But in addition were attached bonus problem. For Lagrange's method - make it on random grid more faster then was (i could reach asymptotics O(n^2 + mn)), all proofs you can find below. For Splines method - do all on random grid. Derivation of formulas below.   
 
 ### Task № 1 - Linear (appoximation/Linear/py):    
 ![](pictures/Linear.png)  
