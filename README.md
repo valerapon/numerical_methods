@@ -97,7 +97,7 @@ and continue working.
 ## mathematicalPhysics:
 #### Dependence:
 pygame library:  
-<code>pip install pygame<\code>  
+<code>pip install pygame</code>  
 ### Diffusion:  
 ![](pictures/diffusion.png)  
 Main purpose - after pressing create temperature spot and it's distribution.
